@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidapplication">
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidApplication.NoActionBar">
+        <activity android:name=".activities.viewInventoryActivity"></activity>
+        <activity android:name=".activities.ScanCodeActivitysearch" />
+        <activity android:name=".activities.SearchItemActivity" />
+        <activity android:name=".activities.ScanCodeActivitydel" />
+        <activity android:name=".activities.deleteItemsActivity" />
+        <activity android:name=".activities.ScanCodeActivity" />
+        <activity android:name=".activities.additemActivity" />
+        <activity android:name=".activities.tracker" />
+        <activity android:name=".activities.EditEvent" />
+        <activity android:name=".activities.CreateEvent" />
+        <activity android:name=".activities.ToDo" />
+
+        <receiver android:name=".receiver.AlarmReceiver" />
+        <receiver android:name=".receiver.AlarmReceiver1" />
+
+        <activity android:name=".activities.Prof" />
+        <activity android:name=".activities.Otp" />
+        <activity android:name=".activities.FireBaseLoginActivity" />
+        <activity android:name=".activities.Login" />
+        <activity android:name=".activities.ShareActivity"/>
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

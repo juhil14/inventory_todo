@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="General">
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:icon="@drawable/ic_baseline_home_24"
+                android:title="Home" />
+            <item
+                android:id="@+id/todo"
+                android:icon="@drawable/ic_baseline_article_24"
+                android:title="To-Do" />
+            <item
+                android:id="@+id/items"
+                android:icon="@drawable/ic_baseline_store_24"
+                android:title="Items Available" />
+        </menu>
+    </item>
+    <item android:title="Communication">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="Share" />
+
+        </menu>
+    </item>
+
+
+</menu>
